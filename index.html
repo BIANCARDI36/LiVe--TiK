@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Formulario</title>
+
+</head>
+<body>
+    <form>
+
+        <label for="nome">Nome</label> 
+        <input type="text" name="nome" placeholder="Digite seu nome aqui..." id="nome" maxlength="17" required/>
+      
+        <label for="email">E-mail</label>
+        <input id="email" type="text" placeholder="Digite seu e-mail aqui..." maxlength="17" required/> 
+
+        <label for="descrição">descrição</label>
+        <textarea id="descrição" placeholder="Digite aqui..." required="true" cols="30" rows="10"></textarea>  
+
+
+        
+        <label for="planos">Planos</label>
+        <select id="planos" name="plano" required="true">
+            <option value="free">grátis</option>
+            <option value="Premium">Premium</option>
+            <option value="free">Pro</option>
+        </select>
+        <button type="submit">Enviar</button>
+
+
+      
+        <label for="senha">Senha</label>
+        <input id="senha" type="password" placeholder="Digite sua senha aqui..." maxlength="17" required />
+
+        <label for="confirmação de senha">confirme sua Senha</label>
+        <input id="confirmação de senha" type="password" placeholder="Digite sua senha aqui..." maxlength="17" required />
+      
+      
+        <label for="idade">Idade</label>
+        <input id="idade" type="number" placeholder="Digite sua idade aqui..." maxlength="2" required/>
+      
+        <label for="telefone">Telefone</label>
+        <input id="telefone" type="tel" placeholder="Digite seu número aqui..." maxlength="11" required/>
+      
+        <button type="submit">Enviar</button>
+      
+    </form>
+    <form>
+      
+        
+       
+         <label for="email-sim">Deseja receber notificações por E-mail?</label>
+         <input type="radio" value="sim" name="MetodoDeContato" id="email-sim" required /> Sim
+     
+         <input type="radio" value="nao" name="MetodoDeContato" id="email-nao" required /> Não
+     
+       
+      
+      <button type="submit">Enviar</button>
+
+
+    </form>
+   
+</body>
+</html>
